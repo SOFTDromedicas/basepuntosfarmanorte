@@ -11,7 +11,7 @@ import java.util.Set;
  * 
  */
 @Entity
-@NamedQuery(name="Transaccion.findAll", query="SELECT t FROM Transaccion t")
+@NamedQueries({@NamedQuery(name="Transaccion.findAll", query="SELECT t FROM Transaccion t")})
 public class Transaccion implements Serializable {
 	private static final long serialVersionUID = 1L;
 
