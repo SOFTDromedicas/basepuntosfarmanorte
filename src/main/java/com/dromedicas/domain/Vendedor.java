@@ -9,7 +9,7 @@ import javax.persistence.*;
  * 
  */
 @Entity
-@NamedQuery(name="Vendedor.findAll", query="SELECT v FROM Vendedor v")
+@NamedQueries({@NamedQuery(name="Vendedor.findAll", query="SELECT v FROM Vendedor v")})
 public class Vendedor implements Serializable {
 	private static final long serialVersionUID = 1L;
 
