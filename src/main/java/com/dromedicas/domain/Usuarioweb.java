@@ -11,7 +11,7 @@ import java.util.Set;
  * 
  */
 @Entity
-@NamedQuery(name="Usuarioweb.findAll", query="SELECT u FROM Usuarioweb u")
+@NamedQueries({@NamedQuery(name="Usuarioweb.findAll", query="SELECT u FROM Usuarioweb u")})
 public class Usuarioweb implements Serializable {
 	private static final long serialVersionUID = 1L;
 
