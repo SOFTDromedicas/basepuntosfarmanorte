@@ -9,7 +9,7 @@ import javax.persistence.*;
  * 
  */
 @Entity
-@NamedQuery(name="Smsplantilla.findAll", query="SELECT s FROM Smsplantilla s")
+@NamedQueries({@NamedQuery(name="Smsplantilla.findAll", query="SELECT s FROM Smsplantilla s")})
 public class Smsplantilla implements Serializable {
 	private static final long serialVersionUID = 1L;
 

@@ -10,7 +10,7 @@ import java.util.Set;
  * 
  */
 @Entity
-@NamedQuery(name="Sucursal.findAll", query="SELECT s FROM Sucursal s")
+@NamedQueries({@NamedQuery(name="Sucursal.findAll", query="SELECT s FROM Sucursal s")})
 public class Sucursal implements Serializable {
 	private static final long serialVersionUID = 1L;
 
