@@ -10,7 +10,7 @@ import java.util.Set;
  * 
  */
 @Entity
-@NamedQuery(name="Tipotransaccion.findAll", query="SELECT t FROM Tipotransaccion t")
+@NamedQueries({@NamedQuery(name="Tipotransaccion.findAll", query="SELECT t FROM Tipotransaccion t")})
 public class Tipotransaccion implements Serializable {
 	private static final long serialVersionUID = 1L;
 
