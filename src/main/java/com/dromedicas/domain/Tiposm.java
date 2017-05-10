@@ -11,7 +11,7 @@ import java.util.Set;
  */
 @Entity
 @Table(name="tiposms")
-@NamedQuery(name="Tiposm.findAll", query="SELECT t FROM Tiposm t")
+@NamedQueries({@NamedQuery(name="Tiposm.findAll", query="SELECT t FROM Tiposm t")})
 public class Tiposm implements Serializable {
 	private static final long serialVersionUID = 1L;
 
