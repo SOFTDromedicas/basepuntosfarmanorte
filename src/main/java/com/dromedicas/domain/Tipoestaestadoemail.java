@@ -1,8 +1,16 @@
 package com.dromedicas.domain;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 
 
 /**
@@ -10,7 +18,7 @@ import java.util.Set;
  * 
  */
 @Entity
-@NamedQuery(name="Tipoestaestadoemail.findAll", query="SELECT t FROM Tipoestaestadoemail t")
+@NamedQueries({@NamedQuery(name="Tipoestaestadoemail.findAll", query="SELECT t FROM Tipoestaestadoemail t")})
 public class Tipoestaestadoemail implements Serializable {
 	private static final long serialVersionUID = 1L;
 
