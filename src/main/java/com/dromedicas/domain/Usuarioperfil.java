@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
  * 
  */
 @Entity
-@NamedQuery(name="Usuarioperfil.findAll", query="SELECT u FROM Usuarioperfil u")
+@NamedQueries({@NamedQuery(name="Usuarioperfil.findAll", query="SELECT u FROM Usuarioperfil u")})
 public class Usuarioperfil implements Serializable {
 	private static final long serialVersionUID = 1L;
 
