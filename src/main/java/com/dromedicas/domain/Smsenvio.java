@@ -11,7 +11,7 @@ import java.util.Set;
  * 
  */
 @Entity
-@NamedQuery(name="Smsenvio.findAll", query="SELECT s FROM Smsenvio s")
+@NamedQueries({@NamedQuery(name="Smsenvio.findAll", query="SELECT s FROM Smsenvio s")})
 public class Smsenvio implements Serializable {
 	private static final long serialVersionUID = 1L;
 

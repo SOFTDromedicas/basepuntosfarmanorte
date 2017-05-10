@@ -22,7 +22,7 @@ public class RolDaoImpl implements RolDao {
 
 	@Override
 	public Rol obtenerRolById(Rol instance) {
-		return em.find(Rol.class, instance);
+		return em.find(Rol.class, instance.getIdrol());
 	}
 
 	@Override
