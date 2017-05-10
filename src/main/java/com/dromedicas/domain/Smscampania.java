@@ -12,7 +12,7 @@ import java.util.Date;
  * 
  */
 @Entity
-@NamedQuery(name="Smscampania.findAll", query="SELECT s FROM Smscampania s")
+@NamedQueries({@NamedQuery(name="Smscampania.findAll", query="SELECT s FROM Smscampania s")})
 public class Smscampania implements Serializable {
 	private static final long serialVersionUID = 1L;
 
